@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.left-img{
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 10%;
+}
+
+.right-img {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 12%;
+}
+
+
+h1 {
+  justify-content: center;
+  text-align:center ;
+  margin-left: 525px;
+  color: #003DA4;
+}
+
+h2{
+  justify-content: center;
+  text-align:center ;
+  margin-top: 6%;
+  margin-bottom: 3%;
+  color: #FF3C2C;
+}
+
+h3{
+  text-align:center ;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  color: #003DA4;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 13%;
+  float: right;
+  margin-top: 2%; 
+}
+
+#submit-form{
+    width: 800px; 
+    height: 550px;
+    padding: 20px 60px;
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 30px;
+}
+
+.comp{height: 80px;}
+
+.btn{
+  border: 2px solid #FF3C2C;
+  border-radius: 25px;
+  width: 130px;
+  height: 40px;
+  color: #FF3C2C;
+  background-color: #fff;
+  font: 500 1.2rem 'Poppins', sans-serif;
+  margin: 10px;
+}
+
+.btn:hover{
+  cursor: pointer;
+  background: linear-gradient(to right, #FF3C2C, #F6A21E);
+  transition: 3.s ease-in-out;
+  border: none;
+  color: #fff;
+}
+
+.prev{float:left;}
+
+.nxt{float: right;}
+
+.sum{left: 850px; position: absolute; color: #0BDA51; background-color: #fff; border: 2px solid #0BDA51;}
+
+.sum:hover{background: #0BDA51; color: #fff;}
+
+.navbar {
+  position: fixed;
+  top: 15%;
+  left: 2%;
+  padding: 10px 0px;
+  max-height: 300px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 15px 0;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #003DA4;
+  padding: 10px 15px;
+  transition: color 0.3s, padding 0.5s, background-color 0.3s;
+  margin: 0 -15px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.nav-item a:hover { color: #fff; background-color: #FF3C2C; padding: 10px 19px;}
+
+.active a {
+  color: #FF3C2C;
+  font-weight: bold;
+}
+
+.text-field-container {
+  display: flex;
+  flex-direction: row; 
+}
+
+.text-field-group {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+}
+
+/* Gpt3Example.css */
+
+.chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.chatbot {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 300px;
+  /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); */
+}
+
+.robot-icon {
+  position: absolute;
+  bottom: 100%;
+  right: 50%;
+  transform: translateX(50%);
+  cursor: pointer;
+}
+
+.robot-icon img {
+  width: 100px;
+  height: 100px;
+  margin-right: 100px;
+}
+
+.input-form {
+  display: flex;
+  margin-top: 10px;
+}
+
+.input-form input {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.input-form button {
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.message {
+  margin: 5px 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.user-message {
+  background-color: #007bff;
+  color: #fff;
+  align-self: flex-start;
+}
+
+.robot-message {
+  background-color: #eee;
+  color: #000;
+  align-self: flex-end;
+}
